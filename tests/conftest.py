@@ -2,6 +2,7 @@ import pytest
 from config import ConfigNames
 from main import create_app, db
 
+
 @pytest.fixture(autouse=True, scope='session')
 def setup_db():
     app = create_app(ConfigNames.TESTING)
